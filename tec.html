@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPD6868.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-image"><img src="/New folder/hinh-nen-nguoi-nhen-4k-cho-may-tinh_090227475_thumb.jpg" width="100%" height="100%"></div>
+    
+    <div class="container">
+        <div class="left-column">
+            <h1>Chẵn Lẻ</h1>
+            <div class="bet-section">
+                <p>Nhập số tiền cược của bạn (Chẵn Lẻ):</p>
+                <input type="number" id="betAmountChanLe" placeholder="Nhập số tiền cược" min="1">
+                <div class="bet-buttons">
+                    <button onclick="setBetAmount('ChanLe', 10)">10</button>
+                    <button onclick="setBetAmount('ChanLe', 50)">50</button>
+                    <button onclick="setBetAmount('ChanLe', 100)">100</button>
+                    <button onclick="setBetAmount('ChanLe', 1000)">1000</button>
+                    <button onclick="setBetAmount('ChanLe', 'all')">Tất tay</button>
+                </div>
+                <p id="betWarningChanLe" style="color: red;"></p>
+                <p>Chọn phần cược của bạn (Chẵn Lẻ):</p>
+                <button id="chanButton" onclick="placeBet('chan')">Cược Chẵn</button>
+                <button id="leButton" onclick="placeBet('le')">Cược Lẻ</button>
+            </div>
+        </div>
+
+        <div class="center-column">
+            <h1>N P Đ 888 <br> Chơi Theo cách của bạn</h1>
+            <h1>Game Tài Xỉu Thần Tài</h1>
+            <p id="result"></p>
+            <p id="points">Tiền Của Bạn Là: 1000</p>
+            <p id="timer">Phiên mới sẽ bắt đầu sau 0 giây</p>
+            <p id="bettingTimer">Còn: 10 giây</p>
+            <div id="diceImages">
+                <img id="dice1" class="hidden" src="" alt="Xúc xắc 1">
+                <img id="dice2" class="hidden" src="" alt="Xúc xắc 2">
+                <img id="dice3" class="hidden" src="" alt="Xúc xắc 3">
+            </div>
+        </div>
+
+        <div class="right-column">
+            <h1>Tài Xỉu</h1>
+            <div class="bet-section">
+                <p>Nhập số tiền cược của bạn (Tài Xỉu):</p>
+                <input type="number" id="betAmountTaiXiu" placeholder="Nhập số tiền cược" min="1">
+                <div class="bet-buttons">
+                    <button onclick="setBetAmount('TaiXiu', 10)">10</button>
+                    <button onclick="setBetAmount('TaiXiu', 50)">50</button>
+                    <button onclick="setBetAmount('TaiXiu', 100)">100</button>
+                    <button onclick="setBetAmount('TaiXiu', 1000)">1000</button>
+                    <button onclick="setBetAmount('TaiXiu', 'all')">Tất tay</button>
+                </div>
+                <p id="betWarningTaiXiu" style="color: red;"></p>
+                <p>Chọn phần cược của bạn (Tài Xỉu):</p>
+                <button id="xiuButton" onclick="placeBet('xiu')">Cược Xỉu</button>
+                <button id="taiButton" onclick="placeBet('tai')">Cược Tài</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
